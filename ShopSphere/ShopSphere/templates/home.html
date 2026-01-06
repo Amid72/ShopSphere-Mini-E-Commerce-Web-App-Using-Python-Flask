@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>ShopSphere</title>
+</head>
+<body>
+<h1>Products</h1>
+<a href="/cart">Go to Cart</a>
+<ul>
+{% for p in products %}
+<li>{{p.name}} - ₹{{p.price}} <a href="/add/{{p.id}}">Add to Cart</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>
